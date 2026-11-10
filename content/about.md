@@ -6,7 +6,7 @@ ShowBreadCrumbs: false
 ShowToc: false
 ---
 
-I'm an AI Engineer and Data Scientist at Capgemini Engineering, based in Casablanca, Morocco. I trained as a data engineer at ENSAH. My work focuses on agentic AI: I improve industrial processes by integrating AI agents and models into them, from design and engineering workflows to supply chain operations.
+I'm an AI Engineer and Data Scientist at Capgemini Engineering, based in Casablanca, Morocco. I trained as a data engineer at ENSAH. My work focuses on agentic AI and on integrating AI into industrial processes to make them more efficient.
 
 [Download my CV (PDF)](../cv_chadi_moutassir.pdf) · [LinkedIn](https://linkedin.com/in/chadi-mountassir) · [GitHub](https://github.com/HyperShadow666) · [chadimountassir@gmail.com](mailto:chadimountassir@gmail.com)
 
