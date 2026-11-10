@@ -1,0 +1,99 @@
+# The real baseURL is injected at build time by .github/workflows/hugo.yml
+baseURL = "/"
+locale = "en-us"
+title = "Chadi Mountassir"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]   # JSON powers the search page
+
+[params]
+  env = "production"
+  title = "Chadi Mountassir"
+  description = "Notes on agentic AI and AI for industry by Chadi Mountassir, AI Engineer and Data Scientist at Capgemini Engineering."
+  author = "Chadi Mountassir"
+  defaultTheme = "auto"            # follows the reader's system; toggle in the header
+  DateFormat = "January 2, 2006"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowShareButtons = false
+  hideSummary = false
+
+  [params.homeInfoParams]
+    Title = "Chadi Mountassir"
+    Content = """
+AI Engineer and Data Scientist at Capgemini Engineering. I work mainly on agentic AI, improving industrial processes by integrating AI into them.
+
+Here I write about what I learn along the way. More about me on the [About](about/) page.
+"""
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:chadimountassir@gmail.com"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/chadi-mountassir"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/HyperShadow666"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+  [params.fuseOpts]
+    keys = ["title", "permalink", "summary", "content"]
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    pageRef = "/archives"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    pageRef = "/search"
+    weight = 30
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 40
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 50
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "cv_chadi_moutassir.pdf"
+    weight = 60
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  # Keep LaTeX intact so KaTeX can render it (see layouts/partials/extend_head.html)
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block = [['\[', '\]'], ['$$', '$$']]
+      inline = [['\(', '\)']]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
