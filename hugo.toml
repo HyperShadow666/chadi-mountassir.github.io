@@ -78,11 +78,6 @@ Here I write about what I learn along the way. More about me on the [About](abou
     name = "About"
     pageRef = "/about"
     weight = 50
-  [[menu.main]]
-    identifier = "cv"
-    name = "CV"
-    url = "cv_chadi_moutassir.pdf"
-    weight = 60
 
 [markup]
   [markup.goldmark.renderer]

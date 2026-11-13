@@ -24,5 +24,4 @@ Edit `content/posts/my-post-title.md`, set `draft: false` when it's ready, then 
 ## Other content
 
 - `content/about.md`: the About / résumé page
-- `static/cv_chadi_moutassir.pdf`: the CV linked from the menu
 - `hugo.toml`: site title, intro text, menu and social links
